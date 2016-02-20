@@ -81,6 +81,7 @@
 		B8389EA71C7906AF0000AE66 /* NVActivityIndicatorAnimationDumbbellPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389EA61C7906AF0000AE66 /* NVActivityIndicatorAnimationDumbbellPulse.swift */; };
 		BD1452341C15810200B952C8 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1452331C15810200B952C8 /* NVActivityIndicatorAnimationBallRotateChase.swift */; };
 		BD1452351C1586F200B952C8 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1452331C15810200B952C8 /* NVActivityIndicatorAnimationBallRotateChase.swift */; };
+		D31A2ACD1C7916F400BF8CD8 /* NVActivityIndicatorAnimationDumbbellPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389EA61C7906AF0000AE66 /* NVActivityIndicatorAnimationDumbbellPulse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -427,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D31A2ACD1C7916F400BF8CD8 /* NVActivityIndicatorAnimationDumbbellPulse.swift in Sources */,
 				90A879AC1BA557B1001C8989 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
 				90A879AA1BA557AB001C8989 /* NVActivityIndicatorShape.swift in Sources */,
 				90A879BC1BA557B1001C8989 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
