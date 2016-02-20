@@ -12,6 +12,7 @@ import UIKit
  Enum of animation types used for activity indicator view.
  
  - Blank:                   Blank animation.
+ - DumbbellPulse:           DumbbellPulse animation.
  - BallPulse:               BallPulse animation.
  - BallGridPulse:           BallGridPulse animation.
  - BallClipRotate:          BallClipRotate animation.
@@ -54,6 +55,11 @@ public enum NVActivityIndicatorType {
      
      - returns: Instance of NVActivityIndicatorAnimationBallPulse.
      */
+    case DumbbellPulse
+    /**
+     
+    - returns: Instance of NVActivityIndicatorAnimationDumbbellPulse.
+    */
     case BallPulse
     /**
      BallGridPulse.
@@ -228,6 +234,8 @@ public enum NVActivityIndicatorType {
         switch self {
         case .Blank:
             return NVActivityIndicatorAnimationBlank()
+        case .DumbbellPulse:
+            return NVActivityIndicatorAnimationDumbbellPulse()
         case .BallPulse:
             return NVActivityIndicatorAnimationBallPulse()
         case .BallGridPulse:
@@ -354,7 +362,7 @@ public class NVActivityIndicatorView: UIView {
         if hidesWhenStopped && hidden {
             hidden = false
         }
-        if (self.layer.sublayers == nil) {
+        if self.layer.sublayers == nil {
             setUpAnimation()
         }
         self.layer.speed = 1
